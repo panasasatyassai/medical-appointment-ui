@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+# Healthcare Appointment Booking Interface
+A simple and responsive React.js web application that allows users to view doctors, check their availability, and book appointments.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Objective
+To build a basic appointment booking platform where users can browse available doctors and schedule appointments using a clean, user-friendly interface.
 
-## Available Scripts
+# Live Demo
+- Live Demo Link
 
-In the project directory, you can run:
+# GitHub Repository
+- GitHub Repo
 
-### `npm start`
+# Tools & Libraries Used
+React.js – For building user interfaces with components.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+JavaScript (ES6) – Used for functionality and logic.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+React Router DOM – For client-side routing/navigation.
 
-### `npm test`
+CSS – For styling and layout.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+JSONKeeper API – Used to fetch and mock doctor data.
 
-### `npm run build`
+# Features
+- View a list of doctors with name, specialization, image, and availability.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Search for doctors by name or specialization.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- View detailed doctor profile with appointment booking form.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Book appointment with patient name, email, and preferred date/time.
 
-### `npm run eject`
+- Data fetched from JSON API (https://jsonkeeper.com/b/XEHRE and https://jsonkeeper.com/b/DKAIV).
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# Improvements with More Time
+- Add form validation for better user input checking.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Implement filter by specialization and availability.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Add backend support using Node.js and Express for real-time appointments.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Store appointment data persistently with localStorage or backend.
 
-## Learn More
+- Improve UI with frameworks like Tailwind CSS or Bootstrap.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Technical Constraints Followed
+Functional Components with React Hooks (useState, useEffect)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Used local state management
 
-### Code Splitting
+No external state libraries or frameworks
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Used only JavaScript and CSS, no TypeScript
 
-### Analyzing the Bundle Size
+# Challenges Faced and Solutions
+1. Routing between pages
+Initially used <a href> which caused full page reloads.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Replaced with Link from react-router-dom for smooth routing.
 
-### Making a Progressive Web App
+2. Fetching Data from APIs
+Faced CORS issues when testing with some fake APIs.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- Resolved by switching to JSONKeeper which supports direct fetch without CORS issues.
 
-### Advanced Configuration
+3. Conditional Rendering of Doctor Data
+Had trouble showing selected doctor’s profile dynamically.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- Solved using route parameters and conditional checks based on doctor ID.
 
-### Deployment
+# Acknowledgements
+JSONKeeper for free JSON data hosting.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

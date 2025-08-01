@@ -1,0 +1,60 @@
+.doctor-profile-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+   
+}
+
+.doctor-card {
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 30px;
+  width: 350px;
+  text-align: center;
+  background-color: #f9f9f9;
+   
+}
+
+.doctor-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  object-fit: cover;
+  margin-bottom: 16px;
+}
+
+.available {
+  color: green;
+  font-weight: bold;
+}
+
+.unavailable {
+  color: red;
+  font-weight: bold;
+}
+
+.book-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.book-btn.disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.schedule-info {
+  margin-top: 10px;
+}
+
+.loading {
+  text-align: center;
+  margin-top: 100px;
+  font-size: 18px;
+}

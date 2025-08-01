@@ -1,0 +1,48 @@
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  background-color: #007bff;
+  color: white;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav-links a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+
+.nav-links a:hover {
+  text-decoration: none;
+  color: orange; 
+  font-family: "Roboto";
+  font-weight: 600;
+  font-size: 15px;
+}
+.heading{
+    text-decoration: none;
+    color: white;
+}
+
+
+/* Responsive for desktop */
+@media screen and (min-width: 768px) {
+  .logo {
+    font-size: 24px;
+  }
+
+  .nav-links a {
+    font-size: 16px;
+    margin-left: 25px;
+  }
+  .heading{
+    text-decoration: none;
+  }
+}
