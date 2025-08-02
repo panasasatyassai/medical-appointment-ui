@@ -20,8 +20,10 @@ A fully client-side React application for booking appointments with doctors. Use
 
 - **React.js**
 - **React Router DOM**
+- **React Router DOM v6.30.1**
 - **UUID** (v4) – For generating unique appointment IDs
 - **localStorage** – For storing appointment data
+- **react-loader-spinner** – For loading indicators
 - **CSS** – Custom styles (no frameworks)
 - **Vercel** – Deployment platform
 
@@ -67,10 +69,16 @@ git clone https://github.com/panasasatyassai/medical-appointment-ui
 2. Install Dependencies 
 -npm install
 
-3. Install UUID 
+3. Install Specific Version of React Router DOM
+-npm install react-router-dom@6.30.1
+
+4. Install UUID 
 -npm install uuid
 
-4. Run the App 
+5. Install Loader Spinner
+-npm install react-loader-spinner
+
+6. Run the App 
 -npm start
 -The app runs at: http://localhost:3000
 
