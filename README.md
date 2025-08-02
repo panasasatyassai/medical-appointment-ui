@@ -6,7 +6,7 @@ A fully client-side React application for booking appointments with doctors. Use
 
 ##  Live Demo
 
-- [View Live on Vercel](https://your-vercel-deployment-url.vercel.app)
+- [View Live on Vercel](https://medical-appointment-4oshujzv1-panasasatyasais-projects.vercel.app/)
 
 ---
 
