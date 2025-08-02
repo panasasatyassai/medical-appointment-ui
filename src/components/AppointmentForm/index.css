@@ -1,0 +1,60 @@
+.form-container{
+    background-color:   white;
+    height: 53vh;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 4px; 
+     
+}
+ 
+.heading2{
+    color: black;
+    font-family: "Roboto";
+    text-align: center;
+    margin: 30px;
+    
+}
+
+.user-label{
+    color:  black;
+    font-family: "Roboto";
+    margin-right: 14px;
+    margin-top: 18px;
+}
+
+.user-box{
+    margin-left: 18px;
+    margin: 10px;
+    height: 15px;
+    color: black;
+    padding: 4px;
+    width: 180px;
+}
+
+.date-box{
+    height: 30px;
+    width: 180px;
+    margin-left: 14px;
+}
+ 
+.form-container{
+    margin-left: 40px; 
+    text-align: center;
+    margin-right: 55px;
+}
+
+.btn-container{
+    margin: 14px;
+     
+}
+.btn2{
+    color: white;
+    width: 120px;
+    height: 29px;
+    background-color: blue;
+    border: 0px;
+    border-radius: 7px;
+    padding: 7px;
+    font-weight: 600;
+    margin-top: 10px;
+}

@@ -1,0 +1,48 @@
+.thank-you-contaner{
+    background-color: white;
+    height: 80vh;
+    width: 93%;
+    margin: 16px;
+    margin-right: 16px;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img1{
+    height: 55px;
+    color: #28a745;
+}
+
+.img-container{
+    display: flex;
+}
+
+.greeting{
+    font-family: "Roboto";
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.support-message{
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.back-home-btn{
+    background-color: #218838;
+    margin-top: 22px;
+    color: white;
+    font-family: "Roboto";
+    border: 0px;
+    width: 130px;
+    height: 30px;
+    border-radius: 9px;
+    padding: 5px;
+    font-size: 14px;
+}

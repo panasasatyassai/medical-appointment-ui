@@ -1,5 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import   { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
+import Popup from 'reactjs-popup'
+
+import 'reactjs-popup/dist/index.css'
+//import SearchBar from '../../components/SearchBar';
+import AppointmentForm from '../../components/AppointmentForm';
 import './index.css';
 
 const DoctorProfile = () => {
@@ -7,9 +12,10 @@ const DoctorProfile = () => {
   const navigate = useNavigate();
   const [doctor, setDoctor] = useState(null);
   
-  const onClickForm = () => {
-     alert("ok")
+  const onClickToHome = () => {
+    navigate("/")
   }
+  
   useEffect(() => {
     fetch('https://jsonkeeper.com/b/DKAIV')
       .then(res => res.json())
@@ -48,14 +54,41 @@ const DoctorProfile = () => {
           <p>No schedule available.</p>
         )}
 
-        <button
+          <div>
+            <Popup
+                 modal
+                 trigger={
+                    <button
           disabled={!doctor.available}
-          onClick={onClickForm}
+         
           className={`book-btn ${!doctor.available ? 'disabled' : ''}`}
         >
           {doctor.available ? 'Book Appointment' : 'Unavailable'}
         </button>
+                 }
+               >
+                 {close => (
+                   <>
+                     <div className='bg'>
+                        <AppointmentForm/>
+                     </div>
+                      <div className='pop-container'> 
+                      <button
+                       type="button"
+                       className="trigger-button"
+                       onClick={() => close()}
+                     >
+                       Close
+                     </button>
+                      </div>
+                   </>
+                 )}
+               </Popup>
+          </div>
       </div>
+       <div className='btn-container'>
+         <button className='btn7' onClick={onClickToHome} >Back</button>
+       </div>
     </div>
   );
 };

@@ -118,7 +118,7 @@ const Home = () => {
         onChange={(e) => setSearchTerm(e.target.value)}
       />
       </div>
-
+       
        <div>
         {renderAllDoctersData()}
        </div>
