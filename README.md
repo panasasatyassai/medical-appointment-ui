@@ -110,6 +110,17 @@ git clone https://github.com/panasasatyassai/medical-appointment-ui
 
 -Managing localStorage updates and ensuring data is reactive
 
+## 📡 APIs Used (Dummy)
+
+- **Doctor List API**  
+  [https://jsonkeeper.com/b/XEHRE](https://jsonkeeper.com/b/XEHRE)
+
+- **Doctor Profile API**  
+  [https://jsonkeeper.com/b/DKAIV](https://jsonkeeper.com/b/DKAIV)
+
+> These APIs are used only to simulate backend functionality for development and testing purposes.
+
+
 ## 📃 License
 -This project is created as part of the NxtWave Job Assessment and is intended for educational and evaluation purposes only.
 
