@@ -16,7 +16,7 @@ const Home = () => {
   const [apiStatus , setApiStatus] = useState(apiStatusConstants.initial)
   useEffect(()  => {
     const getDoctersData = async () => {
-        setApiStatus(apiStatus.inProgress)
+        setApiStatus(apiStatusConstants.inProgress)
         const apiUrl = "https://jsonkeeper.com/b/XEHRE"
         const response = await fetch(apiUrl)
         const data = await response.json()

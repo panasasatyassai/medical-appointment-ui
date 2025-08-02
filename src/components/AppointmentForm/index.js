@@ -66,9 +66,7 @@ const AppointmentForm = () => {
              setName("")
              setEmail("")
              setDateTime("")
-        }
-          
-         
+        } 
     }
 
         useEffect(() => {
@@ -76,8 +74,8 @@ const AppointmentForm = () => {
                 navigate("/thank-you", { replace: true });
                 localStorage.setItem("bookedUsers", JSON.stringify(patientsList))
             }
-    console.log("Updated List:", patientsList);
-    }, [submited, navigate]);
+    
+    }, [submited, navigate , patientsList]);
 
     return (
         <div className="form-container">

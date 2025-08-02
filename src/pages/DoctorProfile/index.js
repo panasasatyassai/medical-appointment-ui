@@ -3,7 +3,6 @@ import { useParams, useNavigate } from 'react-router-dom';
 import Popup from 'reactjs-popup'
 
 import 'reactjs-popup/dist/index.css'
-//import SearchBar from '../../components/SearchBar';
 import AppointmentForm from '../../components/AppointmentForm';
 import './index.css';
 

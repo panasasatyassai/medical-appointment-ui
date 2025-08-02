@@ -5,8 +5,7 @@ import DoctorProfile from './pages/DoctorProfile';
 import NotFound from './pages/NotFound'; 
 import ThankYou from './components/ThankYou';
 import Header from './components/Header';
-import BookedUsers  from './components/BookedUsers';
-
+import BookedUsers  from './components/BookedUsers'; 
 import "./App.css"
 
 const App = () => (
