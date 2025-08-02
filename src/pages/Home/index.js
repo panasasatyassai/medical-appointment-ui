@@ -1,5 +1,4 @@
-import React, { useState , useEffect} from "react";
-//import doctors from "../../data/doctors";
+import  { useState , useEffect} from "react"; 
 import DoctorCard from "../../components/DoctorCard";
 import { Oval } from 'react-loader-spinner';
 import "./index.css";

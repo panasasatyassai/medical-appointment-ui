@@ -3,7 +3,7 @@ import './index.css'
 const BookedUsers = () => {
     const bookUsers = localStorage.getItem("bookedUsers")
     const allUsers = JSON.parse(bookUsers)
-    console.log(allUsers)
+    //console.log(allUsers)
     return (
         <div className="table-container">
     <h2>Booked Appointments</h2>
