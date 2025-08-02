@@ -1,73 +1,110 @@
-# Healthcare Appointment Booking Interface
-A simple and responsive React.js web application that allows users to view doctors, check their availability, and book appointments.
+#  Healthcare Appointment Booking App
 
-# Objective
-To build a basic appointment booking platform where users can browse available doctors and schedule appointments using a clean, user-friendly interface.
+A fully client-side React application for booking appointments with doctors. Users can fill in their name, email, and preferred date/time, and their appointments are stored in the browser's `localStorage`. The application also includes routing and a separate page to view all booked appointments.
 
-# Live Demo
-- Live Demo Link
+---
 
-# GitHub Repository
-- GitHub Repo
+##  Live Demo
 
-# Tools & Libraries Used
-React.js – For building user interfaces with components.
+- [View Live on Vercel](https://your-vercel-deployment-url.vercel.app)
 
-JavaScript (ES6) – Used for functionality and logic.
+---
 
-React Router DOM – For client-side routing/navigation.
+##  GitHub Repository
 
-CSS – For styling and layout.
+- [GitHub Repo](https://github.com/panasasatyassai/medical-appointment-ui)
 
-JSONKeeper API – Used to fetch and mock doctor data.
+---
 
-# Features
-- View a list of doctors with name, specialization, image, and availability.
+##  Tech Stack
 
-- Search for doctors by name or specialization.
+- **React.js**
+- **React Router DOM**
+- **UUID** (v4) – For generating unique appointment IDs
+- **localStorage** – For storing appointment data
+- **CSS** – Custom styles (no frameworks)
+- **Vercel** – Deployment platform
 
-- View detailed doctor profile with appointment booking form.
+---
 
-- Book appointment with patient name, email, and preferred date/time.
+## 🔧 Features
 
-- Data fetched from JSON API (https://jsonkeeper.com/b/XEHRE and https://jsonkeeper.com/b/DKAIV).
+-  Book an appointment (Name, Email, Date/Time)
+-  Unique ID for every booking
+-  Persistent data using `localStorage`
+-  Doctor profile route with dynamic `id` (sample)
+-  Thank You page upon booking confirmation
+-  List of all booked appointments (`/booked-users`)
+-  404 Not Found route
 
-# Improvements with More Time
-- Add form validation for better user input checking.
+---
 
-- Implement filter by specialization and availability.
+## 🗂 Folder Structure
 
-- Add backend support using Node.js and Express for real-time appointments.
+src/
+├── components/
+│ ├── AppointmentForm/
+│ ├── BookedUsers/
+│ ├── DoctorCard/
+│ ├── Header/
+│ ├── ThankYou/
+│
+├── pages/
+│ ├── DoctorProfile/
+│ ├── Home/
+│ ├── NotFound/
+│
+├── App.js
+├── index.js
+├── index.css
 
-- Store appointment data persistently with localStorage or backend.
+# Installation & Running Locally
+1 Clone the Repository
+ 
+git clone https://github.com/panasasatyassai/medical-appointment-ui
+-cd healthcare-appointment-app
 
-- Improve UI with frameworks like Tailwind CSS or Bootstrap.
+2. Install Dependencies 
+-npm install
 
-# Technical Constraints Followed
-Functional Components with React Hooks (useState, useEffect)
+3. Install UUID 
+-npm install uuid
 
-Used local state management
+4. Run the App 
+-npm start
+-The app runs at: http://localhost:3000
 
-No external state libraries or frameworks
+# Routing Overview
 
-Used only JavaScript and CSS, no TypeScript
+| Path            | Description                         |
+| --------------- | ----------------------------------- |
+| `/`             | Home page with appointment form     |
+| `/doctor/:id`   | Sample doctor profile               |
+| `/thank-you`    | Shown after a successful submission |
+| `/booked-users` | Lists all booked appointments       |
+| `*`             | 404 Not Found                       |
 
-# Challenges Faced and Solutions
-1. Routing between pages
-Initially used <a href> which caused full page reloads.
+# Improvements With More Time
+-Add backend (Firebase or Express) for real database storage
 
-- Replaced with Link from react-router-dom for smooth routing.
+-Include doctor selection from available list
 
-2. Fetching Data from APIs
-Faced CORS issues when testing with some fake APIs.
+-Form validation and error display improvements
 
-- Resolved by switching to JSONKeeper which supports direct fetch without CORS issues.
+-Add cancel/delete option for appointments
 
-3. Conditional Rendering of Doctor Data
-Had trouble showing selected doctor’s profile dynamically.
+-Responsive UI with better design using Tailwind or Bootstrap
 
-- Solved using route parameters and conditional checks based on doctor ID.
+# Challenges Faced
+-Handling dynamic routes for doctor profiles
 
-# Acknowledgements
-JSONKeeper for free JSON data hosting.
+-Ensuring form validation and conditional rendering
 
+-Managing localStorage updates and ensuring data is reactive
+
+## 📃 License
+-This project is created as part of the NxtWave Job Assessment and is intended for educational and evaluation purposes only.
+
+# Developed By 
+-Panasa Satya Sai
+-- GitHub: @panasasatyassai
